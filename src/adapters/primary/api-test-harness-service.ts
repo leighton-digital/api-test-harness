@@ -1,5 +1,6 @@
 import fastify, { type FastifyReply, type FastifyRequest } from 'fastify';
 import { config } from '../../config';
+import { logger } from '../../logger';
 import { getAndDeleteLastRecord } from '../secondary/database-adapter';
 
 const tableName = config.get('tableName');
@@ -22,7 +23,7 @@ app.all('/*', async (request: FastifyRequest, reply: FastifyReply) => {
 
     const record = await getAndDeleteLastRecord(tableName);
 
-    console.debug(
+    logger.debug(
       `response: ${JSON.stringify(record.response)}, statusCode: ${
         record.statusCode
       }`,
@@ -30,6 +31,7 @@ app.all('/*', async (request: FastifyRequest, reply: FastifyReply) => {
 
     return reply.status(record.statusCode).send(record.response);
   } catch (error) {
+    logger.error(`${error}`);
     reply.status(500).send('An error has occured');
   }
 });

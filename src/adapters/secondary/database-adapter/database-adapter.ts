@@ -3,6 +3,7 @@ import {
   DynamoDBClient,
   ScanCommand,
 } from '@aws-sdk/client-dynamodb';
+import { logger } from '../../../logger';
 
 import { unmarshall } from '@aws-sdk/util-dynamodb';
 
@@ -25,7 +26,7 @@ export async function getAndDeleteLastRecord(
 
     const results = await client.send(scanCommand);
 
-    console.debug(`results: ${JSON.stringify(results.Items)}`);
+    logger.debug(`results: ${JSON.stringify(results.Items)}`);
 
     if (results.Items && results.Items.length > 0) {
       const items = results.Items.map(
@@ -48,7 +49,7 @@ export async function getAndDeleteLastRecord(
     }
     throw new Error('no items to retrieve');
   } catch (error) {
-    console.error(`error fetching and deleting record: ${error}`);
+    logger.error(`error fetching and deleting record: ${error}`);
     throw error;
   }
 }

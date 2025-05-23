@@ -108,11 +108,8 @@ describe('Optional Parameters', () => {
     new ApiTestHarness(stack, 'HarnessWithOptions', {
       stage: 'test',
       loggerEnabled: 'false',
-      logEvent: 'false',
       logLevel: 'INFO',
       logSampleRate: '0.5',
-      traceEnabled: 'false',
-      captureTrace: 'false',
       lambdaRuntime: lambda.Runtime.NODEJS_18_X,
       lambdaMemorySize: 2048,
       resourceNamePrefix: 'custom-prefix',
@@ -125,10 +122,7 @@ describe('Optional Parameters', () => {
       Runtime: 'nodejs18.x',
       Environment: {
         Variables: Match.objectLike({
-          POWERTOOLS_LOGGER_LOG_EVENT: 'false',
           POWERTOOLS_LOGGER_SAMPLE_RATE: '0.5',
-          POWERTOOLS_TRACE_ENABLED: 'false',
-          POWERTOOLS_TRACER_CAPTURE_RESPONSE: 'false',
           LOG_LEVEL: 'INFO',
         }),
       },

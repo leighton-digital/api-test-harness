@@ -17,20 +17,14 @@ interface ApiTestHarnessConstructProps {
   /** The deployment stage, e.g., 'dev', 'prod', etc. */
   stage: string;
 
-  /** Whether the logger is enabled ('true' or 'false'). */
+  /** Whether the logger is enabled in the internal service ('true' or 'false'). */
   loggerEnabled: string;
-
-  /** Whether to log the full event in logs. Defaults to 'true'. */
-  logEvent?: string;
 
   /** Logging level (e.g., 'DEBUG', 'INFO'). Defaults to 'DEBUG'. */
   logLevel?: string;
 
   /** Sample rate for logging. Defaults to '1'. */
   logSampleRate?: string;
-
-  /** Whether X-Ray tracing is enabled. Defaults to 'true'. */
-  traceEnabled?: string;
 
   /** The AWS Lambda runtime to use. Defaults to NODEJS_LATEST. */
   lambdaRuntime?: lambda.Runtime;
@@ -40,9 +34,6 @@ interface ApiTestHarnessConstructProps {
 
   /** Optional prefix to use for named resources (table, function, etc), example, api-test-harness. */
   resourceNamePrefix?: string;
-
-  /** Whether to capture X-Ray tracing or not. Defaults to 'true'. */
-  captureTrace?: string;
 
   /** Optional entry path override for the Lambda function code. */
   entryPathOverride?: string;
@@ -83,14 +74,11 @@ export class ApiTestHarness extends Construct {
     const {
       stage,
       loggerEnabled,
-      logEvent,
       logLevel,
       logSampleRate,
-      traceEnabled,
       lambdaRuntime,
       lambdaMemorySize,
       resourceNamePrefix,
-      captureTrace,
       entryPathOverride,
     } = props;
 
@@ -118,12 +106,9 @@ export class ApiTestHarness extends Construct {
 
     const lambdaConfig = {
       LOG_LEVEL: logLevel || 'DEBUG',
-      POWERTOOLS_LOGGER_LOG_EVENT: logEvent || 'true',
       POWERTOOLS_LOGGER_SAMPLE_RATE: logSampleRate || '1',
-      POWERTOOLS_TRACE_ENABLED: traceEnabled || 'true',
       POWERTOOLS_TRACER_CAPTURE_HTTPS_REQUESTS: 'true',
       POWERTOOLS_SERVICE_NAME: `${namePrefix}-service-${nameSuffix}`,
-      POWERTOOLS_TRACER_CAPTURE_RESPONSE: captureTrace || 'true',
       POWERTOOLS_METRICS_NAMESPACE: `${namePrefix}-${nameSuffix}`,
     };
 

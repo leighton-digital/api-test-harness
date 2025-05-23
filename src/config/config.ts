@@ -20,9 +20,15 @@ export const config = convict({
     env: 'X_API_KEY',
   },
   loggerEnabled: {
-    doc: 'Whether to enable the logger',
+    doc: 'Whether to enable the internal logger for debugging',
     format: Boolean,
-    default: true,
+    default: false,
     env: 'LOGGER_ENABLED',
+  },
+  serviceName: {
+    doc: 'The service name of the api test harness',
+    format: String,
+    default: 'api-test-harness',
+    env: 'POWERTOOLS_SERVICE_NAME',
   },
 }).validate({ allowed: 'strict' });

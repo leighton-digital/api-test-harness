@@ -61,11 +61,9 @@ npm install @leighton-digital/api-test-harness
 | Name                | Description                                                                 | Example Value           |
 |---------------------|-----------------------------------------------------------------------------|--------------------------|
 | `stage`             | The deployment stage name (used in resource naming and tagging).            | `"dev"`                 |
-| `loggerEnabled`     | Whether to enable the logger (`"true"` or `"false"`).                       | `"true"`                |
-| `logEvent`          | Whether to log the full event in logs (`"true"` or `"false"`). Defaults to `"true"`. | `"false"`         |
-| `logLevel`          | Logging level for the Lambda function (e.g., `"DEBUG"`, `"INFO"`). Defaults to `"DEBUG"`. | `"INFO"`      |
-| `logSampleRate`     | Logging sample rate, typically a decimal string between 0 and 1. Defaults to `"1"`. | `"0.5"`           |
-| `traceEnabled`      | Whether AWS X-Ray tracing is enabled. Defaults to `"true"`.                 | `"false"`               |
+| `loggerEnabled`     | Whether to enable the internal logger in the service code or not for debugging i.e. the internal Fastify app. false as default (`"true"` or `"false"`).                       | `"true"`                |
+| `logLevel`          | Logging level for the Lambda function (e.g., `"DEBUG"`, `"INFO"`). Defaults to `"DEBUG"`. | `"INFO"`. (Values can be DEBUG, INFO, WARN, ERROR, CRITICAL, SILENT) |
+| `logSampleRate`     | Logging debug sample rate for Lambda, typically a decimal string between 0 and 1. Defaults to `"1"`. | `"0.5"`           |
 | `lambdaRuntime`     | The Lambda runtime to use (defaults to `lambda.Runtime.NODEJS_LATEST`).     | `lambda.Runtime.NODEJS_18_X` |
 | `lambdaMemorySize`  | Memory size (in MB) to allocate to the Lambda function. Defaults to `1024`. | `512`                   |
 | `resourceNamePrefix`| Optional prefix for resource names like table, Lambda, SSM params.           | `"booking-service"`     |
@@ -98,7 +96,6 @@ export class MyTestStack extends Stack {
       loggerEnabled: 'true',
       logLevel: 'INFO',
       logSampleRate: '1',
-      traceEnabled: 'false',
       lambdaMemorySize: 512,
       resourceNamePrefix: 'my-test-harness',
     });
