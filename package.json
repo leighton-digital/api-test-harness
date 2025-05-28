@@ -9,7 +9,15 @@
       "require": "./dist/index.js"
     }
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leighton-digital/api-test-harness.git"
+  },
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leighton-digital/api-test-harness/issues"
+  },
+  "homepage": "https://github.com/leighton-digital/api-test-harness#readme",
   "scripts": {
     "build": "tsc -p tsconfig.build.json --listEmittedFiles",
     "postbuild": "rm tsconfig.build.tsbuildinfo",

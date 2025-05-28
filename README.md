@@ -24,7 +24,7 @@ There are times when building solutions on AWS with the AWS CDK when our solutio
 ## Solution
 The following diagram shows the overall solution.
 
-![Solution Example](./images/solution.png)
+![Solution Example](images/solution.png)
 
 We can see from the diagram above that:
 
