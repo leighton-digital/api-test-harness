@@ -73,6 +73,14 @@ describe('Lambda Function', () => {
     });
   });
 
+  it('should allow function invocation via function URL', () => {
+    template.hasResourceProperties('AWS::Lambda::Permission', {
+      Action: 'lambda:InvokeFunction',
+      Principal: '*',
+      InvokedViaFunctionUrl: true,
+    });
+  });
+
   it('should configure Lambda function URL with no auth and CORS enabled', () => {
     template.hasResourceProperties('AWS::Lambda::Url', {
       AuthType: 'NONE',
