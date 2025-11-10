@@ -138,12 +138,6 @@ export class ApiTestHarness extends Construct {
       },
     });
 
-    apiTestHarnessLambda.addPermission('FunctionUrlInvokePermission', {
-      principal: new iam.AnyPrincipal(),
-      action: 'lambda:InvokeFunctionUrl',
-      functionUrlAuthType: lambda.FunctionUrlAuthType.NONE,
-    });
-
     this.dynamoDbTable.grantReadWriteData(apiTestHarnessLambda);
 
     const functionUrl = apiTestHarnessLambda.addFunctionUrl({
