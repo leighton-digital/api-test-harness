@@ -33,3 +33,11 @@ yarn-error.log*
 # AWS credentials
 .aws/
 .aws-credentials
+
+#Turbo
+.turbo/
+
+# Typedoc
+docs/reference/
+
+cdk.out/

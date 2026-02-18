@@ -24,7 +24,7 @@ There are times when building solutions on AWS with the AWS CDK when our solutio
 ## Solution
 The following diagram shows the overall solution.
 
-![Solution Example](images/solution.png)
+![Solution Example](_media/solution.png)
 
 We can see from the diagram above that:
 
@@ -68,7 +68,6 @@ npm install @leighton-digital/api-test-harness
 | `lambdaMemorySize`  | Memory size (in MB) to allocate to the Lambda function. Defaults to `1024`. | `512`                   |
 | `resourceNamePrefix`| Optional prefix for resource names like table, Lambda, SSM params.           | `"booking-service"`     |
 | `entryPathOverride` | Optional entry path override for the Lambda function code.           | `"./adapters/primary/api-test-harness-adapter.ts"`     |
-
 
 ### Importing the Package
 
@@ -114,7 +113,7 @@ As it is publically accessible, an API key is auto-generated on CDK deploy which
 
 ## License
 
-MIT License - see the [LICENSE](LICENSE) file for details
+MIT License - see the [LICENSE](_media/LICENSE) file for details
 
 ## Contributing
 
@@ -122,4 +121,4 @@ Contributions are welcome! Please feel free to submit a pull request.
 
 ---
 
-<img src="images/leighton-logo.svg" width="200" >
+<img src="_media/leighton-logo.svg" width="200" >

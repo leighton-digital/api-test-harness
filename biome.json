@@ -7,7 +7,12 @@
   },
   "files": {
     "ignoreUnknown": false,
-    "ignore": ["node_modules/**/*", "dist/**/*", "package.json"]
+    "ignore": [
+      "node_modules/**/*",
+      "dist/**/*",
+      "package.json",
+      "commitlint.config.cjs"
+    ]
   },
   "formatter": {
     "enabled": true,
