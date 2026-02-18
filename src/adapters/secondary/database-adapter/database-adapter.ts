@@ -3,9 +3,8 @@ import {
   DynamoDBClient,
   ScanCommand,
 } from '@aws-sdk/client-dynamodb';
-import { logger } from '../../../logger';
-
 import { unmarshall } from '@aws-sdk/util-dynamodb';
+import { logger } from '../../../logger';
 
 export interface DatabaseRecord {
   pk: string;

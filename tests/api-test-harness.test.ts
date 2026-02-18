@@ -1,7 +1,6 @@
-import * as lambda from 'aws-cdk-lib/aws-lambda';
-
 import { App, Stack } from 'aws-cdk-lib';
 import { Match, Template } from 'aws-cdk-lib/assertions';
+import * as lambda from 'aws-cdk-lib/aws-lambda';
 
 import { ApiTestHarness } from '../src/index';
 

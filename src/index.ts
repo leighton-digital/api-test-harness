@@ -1,12 +1,10 @@
 import * as path from 'node:path';
 import * as cdk from 'aws-cdk-lib';
+import { RemovalPolicy } from 'aws-cdk-lib';
 import * as dynamodb from 'aws-cdk-lib/aws-dynamodb';
-import * as iam from 'aws-cdk-lib/aws-iam';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 import * as nodeLambda from 'aws-cdk-lib/aws-lambda-nodejs';
 import * as ssm from 'aws-cdk-lib/aws-ssm';
-
-import { RemovalPolicy } from 'aws-cdk-lib';
 import { Construct } from 'constructs';
 import { v5 as uuid } from 'uuid';
 
