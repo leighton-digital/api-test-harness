@@ -1,6 +1,6 @@
 # Class: ApiTestHarness
 
-Defined in: src/index.ts:50
+Defined in: src/index.ts:48
 
 A construct that provisions a DynamoDB table, a Lambda function
 with a function URL, and stores the URL/API key in SSM Parameter Store.
@@ -19,7 +19,7 @@ Useful for testing API functionality in isolated environments.
 
 > **new ApiTestHarness**(`scope`, `id`, `props`): `ApiTestHarness`
 
-Defined in: src/index.ts:67
+Defined in: src/index.ts:65
 
 Creates a new instance of the ApiTestHarness.
 
@@ -57,7 +57,7 @@ Configuration options for the construct.
 
 > `readonly` **dynamoDbTable**: `Table`
 
-Defined in: src/index.ts:52
+Defined in: src/index.ts:50
 
 Reference to the DynamoDB table created for storing test data.
 
@@ -67,7 +67,7 @@ Reference to the DynamoDB table created for storing test data.
 
 > `readonly` **functionApiKey**: `string`
 
-Defined in: src/index.ts:58
+Defined in: src/index.ts:56
 
 The API key used to invoke the Lambda function.
 
@@ -77,7 +77,7 @@ The API key used to invoke the Lambda function.
 
 > `readonly` **functionUrl**: `string`
 
-Defined in: src/index.ts:55
+Defined in: src/index.ts:53
 
 The function URL of the deployed Lambda function.
 

@@ -5,8 +5,5 @@
   "semantic-release": {
     "config": [".releaserc.json"]
   },
-  "ignoreDependencies": [
-    "@semantic-release/commit-analyzer",
-    "conventional-changelog-conventionalcommits"
-  ]
+  "ignoreDependencies": ["@fastify/aws-lambda", "fastify", "esbuild", "ts-jest"]
 }
