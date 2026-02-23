@@ -81,4 +81,4 @@ If you have any questions about contributing, feel free to open an issue or cont
 
 ---
 
-<img src="images/leighton-logo.svg" width="200" >
+<img src="images/leighton-logo.svg" width="200" />

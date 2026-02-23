@@ -11,7 +11,7 @@ import { v5 as uuid } from 'uuid';
 /**
  * Properties for configuring the ApiTestHarness
  */
-interface ApiTestHarnessConstructProps {
+export interface ApiTestHarnessConstructProps {
   /** The deployment stage, e.g., 'dev', 'prod', etc. */
   stage: string;
 
