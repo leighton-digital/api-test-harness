@@ -53,6 +53,7 @@
     "lint": "biome check --linter-enabled=true --formatter-enabled=false .",
     "lint:fix": "biome check --linter-enabled=true --formatter-enabled=true --write .",
     "check": "npx @biomejs/biome check --write",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
     "check:staged": "npx @biomejs/biome check --write --staged",
     "prepublishOnly": "npm run clean && npm run build",
     "test": "POWERTOOLS_DEV=true jest",
