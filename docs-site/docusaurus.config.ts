@@ -57,7 +57,7 @@ const config: Config = {
       {
         docs: {
           // Point to the folder where your TypeDoc Markdown (or curated docs) live
-          path: '../docs/reference',
+          path: './docs',
           routeBasePath: '/', // Serve docs at site root
           sidebarPath: './sidebars.ts',
         },
@@ -66,6 +66,19 @@ const config: Config = {
           customCss: './src/css/custom.css',
         },
       } satisfies Preset.Options,
+    ],
+  ],
+
+  plugins: [
+    [
+      'docusaurus-plugin-typedoc',
+
+      // Options
+      {
+        entryPoints: ['../src/'],
+        docsPath: '../docs/reference',
+        tsconfig: '../tsconfig.json',
+      },
     ],
   ],
 
@@ -114,18 +127,6 @@ const config: Config = {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
     },
-    plugins: [
-      [
-        'docusaurus-plugin-typedoc',
-
-        // Options
-        {
-          entryPoints: ['../src/'],
-          docsPath: '../docs/reference',
-          tsconfig: '../tsconfig.json',
-        },
-      ],
-    ],
   } satisfies Preset.ThemeConfig,
 };
 
