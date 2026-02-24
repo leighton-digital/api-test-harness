@@ -99,6 +99,9 @@ importers:
       '@mdx-js/react':
         specifier: 3.1.1
         version: 3.1.1(@types/react@19.2.14)(react@19.2.4)
+      docusaurus-plugin-typedoc:
+        specifier: ^1.0.5
+        version: 1.4.2(typedoc-plugin-markdown@4.10.0(typedoc@0.28.17(typescript@5.9.3)))
       prism-react-renderer:
         specifier: 2.4.1
         version: 2.4.1(react@19.2.4)
@@ -3861,6 +3864,11 @@ packages:
     resolution: {integrity: sha512-l4gcSouhcgIKRvyy99RNVOgxXiicE+2jZoNmaNmZ6JXiGajBOJAesk1OBlJuM5k2c+eudGdLxDqXuPCKIj6kpw==}
     engines: {node: '>=6'}
 
+  docusaurus-plugin-typedoc@1.4.2:
+    resolution: {integrity: sha512-1qerRejLSYxEWdyVPLDMMeKFPLA/37yZAsdwJy9ThHFQR78+v3b5spSbk67VHGLr2mAn4FVHu0aGJ6p7iWotSg==}
+    peerDependencies:
+      typedoc-plugin-markdown: '>=4.8.0'
+
   dom-converter@0.2.0:
     resolution: {integrity: sha512-gd3ypIPfOMr9h5jIKq8E3sHOTCjeirnl0WK5ZdS1AW0Odt0b1PaWaHdJ4Qk4klv+YB9aJBS7mESXjFoDQPu6DA==}
 
@@ -7208,6 +7216,11 @@ packages:
 
   typedarray@0.0.6:
     resolution: {integrity: sha512-/aCDEGatGvZ2BIk+HmLf4ifCJFwvKFNb9/JeZPMulfgFracn9QFcAf5GO8B/mweUjSoblS5In0cWhqpfs/5PQA==}
+
+  typedoc-docusaurus-theme@1.4.2:
+    resolution: {integrity: sha512-i9YYDcScLD0WUiX8I+LXHX3ZVvRDlJsmRo9l/uWrFT37cHlMz4Ay0GOnWzHUBnnwAo1uzYOw9RjUXznbWozBEA==}
+    peerDependencies:
+      typedoc-plugin-markdown: '>=4.8.0'
 
   typedoc-plugin-markdown@4.10.0:
     resolution: {integrity: sha512-psrg8Rtnv4HPWCsoxId+MzEN8TVK5jeKCnTbnGAbTBqcDapR9hM41bJT/9eAyKn9C2MDG9Qjh3MkltAYuLDoXg==}
@@ -12777,6 +12790,11 @@ snapshots:
     dependencies:
       '@leichtgewicht/ip-codec': 2.0.5
 
+  docusaurus-plugin-typedoc@1.4.2(typedoc-plugin-markdown@4.10.0(typedoc@0.28.17(typescript@5.9.3))):
+    dependencies:
+      typedoc-docusaurus-theme: 1.4.2(typedoc-plugin-markdown@4.10.0(typedoc@0.28.17(typescript@5.9.3)))
+      typedoc-plugin-markdown: 4.10.0(typedoc@0.28.17(typescript@5.9.3))
+
   dom-converter@0.2.0:
     dependencies:
       utila: 0.4.0
@@ -16833,6 +16851,10 @@ snapshots:
       is-typedarray: 1.0.0
 
   typedarray@0.0.6: {}
+
+  typedoc-docusaurus-theme@1.4.2(typedoc-plugin-markdown@4.10.0(typedoc@0.28.17(typescript@5.9.3))):
+    dependencies:
+      typedoc-plugin-markdown: 4.10.0(typedoc@0.28.17(typescript@5.9.3))
 
   typedoc-plugin-markdown@4.10.0(typedoc@0.28.17(typescript@5.9.3)):
     dependencies:
