@@ -24,7 +24,6 @@ const config: Config = {
   projectName: 'api-test-harness', // Repo name
 
   onBrokenLinks: 'warn',
-  onBrokenMarkdownLinks: 'warn',
 
   i18n: {
     defaultLocale: 'en',
@@ -48,6 +47,9 @@ const config: Config = {
         res.frontMatter.hide_title = true;
       }
       return res;
+    },
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
     },
   },
 
