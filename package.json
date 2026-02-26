@@ -102,6 +102,6 @@
     "@fastify/aws-lambda": "6.4.0",
     "convict": "6.2.4",
     "fastify": "5.7.4",
-    "uuid": "11.1.0"
+    "uuid": "13.0.0"
   }
 }
