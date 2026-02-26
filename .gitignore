@@ -38,6 +38,8 @@ yarn-error.log*
 .turbo/
 
 # Typedoc
-docs/reference/
+docs/
+docs-site/api-reference/
+docs-site/docs/
 
 cdk.out/

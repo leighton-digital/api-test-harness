@@ -114,7 +114,7 @@ As it is publically accessible, an API key is auto-generated on CDK deploy which
 
 ## License
 
-MIT License - see the [LICENSE](LICENSE) file for details
+MIT License - see the [LICENSE](https://github.com/leighton-digital/api-test-harness/blob/main/LICENSE) file for details
 
 ## Contributing
 
@@ -122,4 +122,4 @@ Contributions are welcome! Please feel free to submit a pull request.
 
 ---
 
-<img src="images/leighton-logo.svg" width="200" />
+<img src="https://raw.githubusercontent.com/leighton-digital/api-test-harness/HEAD/images/leighton-logo.svg?sanitize=true" width="200" />

@@ -76,7 +76,7 @@ const config: Config = {
       // Options
       {
         entryPoints: ['../src/'],
-        docsPath: '../docs/reference',
+        docsPath: './docs/reference',
         tsconfig: '../tsconfig.json',
       },
     ],

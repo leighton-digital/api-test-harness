@@ -8,7 +8,7 @@ const typedocSidebar = {
       items: [
         {
           type: 'doc',
-          id: '../../docs-site/docs/api/classes/ApiTestHarness',
+          id: '../api/classes/ApiTestHarness',
           label: 'ApiTestHarness',
         },
       ],
@@ -19,7 +19,7 @@ const typedocSidebar = {
       items: [
         {
           type: 'doc',
-          id: '../../docs-site/docs/api/interfaces/ApiTestHarnessConstructProps',
+          id: '../api/interfaces/ApiTestHarnessConstructProps',
           label: 'ApiTestHarnessConstructProps',
         },
       ],
