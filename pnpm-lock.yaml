@@ -18,8 +18,8 @@ importers:
         specifier: 3.992.0
         version: 3.992.0(@aws-sdk/client-dynamodb@3.992.0)
       '@fastify/aws-lambda':
-        specifier: 5.1.4
-        version: 5.1.4
+        specifier: 6.4.0
+        version: 6.4.0
       convict:
         specifier: 6.2.4
         version: 6.2.4
@@ -1847,8 +1847,8 @@ packages:
   '@fastify/ajv-compiler@4.0.5':
     resolution: {integrity: sha512-KoWKW+MhvfTRWL4qrhUwAAZoaChluo0m0vbiJlGMt2GXvL4LVPQEjt8kSpHI3IBq5Rez8fg+XeH3cneztq+C7A==}
 
-  '@fastify/aws-lambda@5.1.4':
-    resolution: {integrity: sha512-ExyaFMcEJXyUnYktzs5ww/5iDI8LcXMiIMnYZW6aavSIu+W0d08bJhvw8ShHL9wsRrRvfH+BOLdUEVB8oQ4Rew==}
+  '@fastify/aws-lambda@6.4.0':
+    resolution: {integrity: sha512-7iCx4Bl+SoeeRP0ALv1Rg4AR63yBW8XxgQiQ4OrTJApUObMzMtN1VPFtnoAqGhtpruAeVUTxgGpsW1hasYxU8Q==}
 
   '@fastify/error@4.2.0':
     resolution: {integrity: sha512-RSo3sVDXfHskiBZKBPRgnQTtIqpi/7zhJOEmAxCiBcM7d0uwdGdxLlsCaLzGs8v8NnxIRlfG0N51p5yFaOentQ==}
@@ -11125,7 +11125,7 @@ snapshots:
       ajv-formats: 3.0.1(ajv@8.18.0)
       fast-uri: 3.1.0
 
-  '@fastify/aws-lambda@5.1.4': {}
+  '@fastify/aws-lambda@6.4.0': {}
 
   '@fastify/error@4.2.0': {}
 
