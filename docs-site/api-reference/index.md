@@ -1,4 +1,4 @@
-<img width="50px" height="50px" align="right" alt="API Test Harness Logo" src="https://raw.githubusercontent.com/leighton-digital/api-test-harness/HEAD/images/api-test-harness-logo.png?sanitize=true" title="Leighton API Test Harness"/>
+<img width="50px" height="50px" align="right" alt="API Test Harness Logo" src="images/api-test-harness-logo.png?sanitize=true" title="Leighton API Test Harness"/>
 
 # Leighton API Test Harness
 
@@ -13,8 +13,6 @@ There are times when building solutions on AWS with the AWS CDK when our solutio
 
 > Note: We can seed the DynamoDB items to be retured through the API Test Harness using the AWS SDK or CLI.
 
----
-
 ## Features
 
 - Deterministic API Responses: Configure predefined API responses to ensure consistent and repeatable end-to-end (e2e) tests, eliminating flakiness due to external dependencies.
@@ -23,12 +21,10 @@ There are times when building solutions on AWS with the AWS CDK when our solutio
 - Integration with AWS CDK: Seamlessly integrate the test harness into AWS Cloud Development Kit (CDK) projects, facilitating infrastructure as code practices and streamlined deployments.
 - Enhanced Debugging Capabilities: Gain better insights into workflow executions by controlling external interactions, making it easier to identify and resolve issues within complex scenarios.
 
----
-
 ## Solution
 The following diagram shows the overall solution.
 
-![Solution Example](https://raw.githubusercontent.com/leighton-digital/api-test-harness/main/images/solution.png)
+![Solution Example](_media/solution.png)
 
 We can see from the diagram above that:
 
@@ -54,15 +50,11 @@ You can seed data prior to your tests running with an example DynamoDB item belo
 
 > Note: Following installation the API Test Harness URL and Api Key are both stored in AWS Parameter Store so they are accessible in your test setup using the AWS SDK.
 
----
-
 ## Installation
 
 ```bash
 npm install @leighton-digital/api-test-harness
 ```
-
----
 
 ## Configuration
 
@@ -76,7 +68,6 @@ npm install @leighton-digital/api-test-harness
 | `lambdaMemorySize`  | Memory size (in MB) to allocate to the Lambda function. Defaults to `1024`. | `512`                   |
 | `resourceNamePrefix`| Optional prefix for resource names like table, Lambda, SSM params.           | `"booking-service"`     |
 | `entryPathOverride` | Optional entry path override for the Lambda function code.           | `"./adapters/primary/api-test-harness-adapter.ts"`     |
-
 
 ### Importing the Package
 
@@ -120,43 +111,14 @@ As it is publically accessible, an API key is auto-generated on CDK deploy which
 
 > Note: When using the test harness you can amend your solution code to only pass the `x-api-key` value if it is present as an environment variable (or equivelant).
 
----
+## License
+
+MIT License - see the [LICENSE](_media/LICENSE) file for details
 
 ## Contributing
 
-We welcome contributions from the community! 🎉
-
-* Read the [Contributing Guide](https://github.com/leighton-digital/api-test-harness/blob/main/CONTRIBUTING.md) for branching, coding standards, and review process.
-* Follow the [Code of Conduct](https://github.com/leighton-digital/api-test-harness/blob/main/CODE_OF_CONDUCT.md).
-* See [Contributors](https://github.com/leighton-digital/api-test-harness/blob/main/CONTRIBUTORS.md) for acknowledgements.
-* Maintainers: follow [Publishing Guidelines](https://github.com/leighton-digital/api-test-harness/blob/main/PUBLISHING.md) for releases.
-
-**Typical flow**
-
-1. Fork → feature branch.
-2. Make changes, add tests, run checks.
-3. Open a PR.
-
-**Lefthook** (set up via `pnpm run dev:setup`) ensures format/lint fixes are applied, spelling is checked (UK English), and type/build checks run pre-commit and pre-push.
+Contributions are welcome! Please feel free to submit a pull request.
 
 ---
 
-## Release Process
-
-Releases are automated via **GitHub Actions**:
-
-1. Contributors create changesets with their PRs.
-2. A **Release PR** is generated with version bumps and changelogs.
-3. When merged, CI builds and **publishes** to the public npm registry.
-
-Manual steps are documented in [PUBLISHING.md](https://github.com/leighton-digital/api-test-harness/blob/main/PUBLISHING.md).
-
----
-
-## License
-
-MIT License - see the [LICENSE](https://github.com/leighton-digital/api-test-harness/blob/main/LICENSE) file for details
-
----
-
-<img src="https://raw.githubusercontent.com/leighton-digital/api-test-harness/HEAD/images/leighton-logo.svg?sanitize=true" width="200" />
+<img src="_media/leighton-logo.svg" width="200" >

@@ -77,7 +77,6 @@ npm install @leighton-digital/api-test-harness
 | `resourceNamePrefix`| Optional prefix for resource names like table, Lambda, SSM params.           | `"booking-service"`     |
 | `entryPathOverride` | Optional entry path override for the Lambda function code.           | `"./adapters/primary/api-test-harness-adapter.ts"`     |
 
-
 ### Importing the Package
 
 You can import the package as shown below

@@ -1,0 +1,15 @@
+{
+  "workspaces": {
+    ".": {}
+  },
+  "semantic-release": {
+    "config": [".releaserc.json"]
+  },
+  "ignoreDependencies": [
+    "@fastify/aws-lambda",
+    "fastify",
+    "esbuild",
+    "ts-jest",
+    "typedoc-plugin-markdown"
+  ]
+}
