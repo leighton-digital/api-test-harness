@@ -10,6 +10,7 @@
     "fastify",
     "esbuild",
     "ts-jest",
-    "typedoc-plugin-markdown"
+    "typedoc-plugin-markdown",
+    "conventional-changelog-conventionalcommits"
   ]
 }
