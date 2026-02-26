@@ -1,5 +1,4 @@
 import type { Config } from 'jest';
-import { pathsToModuleNameMapper } from 'ts-jest';
 
 const config: Config = {
   silent: true,
