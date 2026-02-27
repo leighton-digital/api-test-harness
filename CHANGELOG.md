@@ -1,3 +1,11 @@
+## [1.1.2](https://github.com/leighton-digital/api-test-harness/compare/v1.1.1...v1.1.2) (2026-02-27)
+
+
+### Bug Fixes
+
+* override minimatch to non vulnerable dependency ([977b397](https://github.com/leighton-digital/api-test-harness/commit/977b39786a56c6f53ca80d39722b5e363a63f9ce))
+* upgrade all dependencies ([3feebbf](https://github.com/leighton-digital/api-test-harness/commit/3feebbf3f095208fcb982f67b2aae279ca747468))
+
 ## [1.1.1](https://github.com/leighton-digital/api-test-harness/compare/v1.1.0...v1.1.1) (2026-02-27)
 
 
