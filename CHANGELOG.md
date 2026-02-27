@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/leighton-digital/api-test-harness/compare/v1.1.0...v1.1.1) (2026-02-27)
+
+
+### Bug Fixes
+
+* fix conflict on package.json file ([93bffd6](https://github.com/leighton-digital/api-test-harness/commit/93bffd687d140c45c7fb1b723f220adf99ff720f))
+
 # [1.1.0](https://github.com/leighton-digital/api-test-harness/compare/v1.0.2...v1.1.0) (2026-02-27)
 
 
