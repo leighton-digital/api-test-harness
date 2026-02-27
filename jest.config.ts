@@ -5,6 +5,8 @@ const config: Config = {
   testEnvironment: 'node',
   testMatch: ['**/*.test.ts'],
   moduleFileExtensions: ['ts', 'js', 'json', 'node'],
+  extensionsToTreatAsEsm: ['.ts'],
+  transformIgnorePatterns: ['/node_modules/(?!(\\.pnpm|uuid))'],
   coverageDirectory: 'coverage',
   coveragePathIgnorePatterns: ['/node_modules/', '/dist/'],
   collectCoverageFrom: ['src/**/*.ts', '!src/**/*.test.ts'],
@@ -24,7 +26,21 @@ const config: Config = {
           },
         },
         module: {
-          type: 'commonjs',
+          type: 'es6',
+        },
+      },
+    ],
+    '^.+\\.js$': [
+      '@swc/jest',
+      {
+        jsc: {
+          parser: {
+            syntax: 'ecmascript',
+          },
+          target: 'es2021',
+        },
+        module: {
+          type: 'es6',
         },
       },
     ],
