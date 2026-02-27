@@ -103,5 +103,10 @@
     "convict": "6.2.4",
     "fastify": "5.7.4",
     "uuid": "13.0.0"
+  },
+  "pnpm": {
+    "overrides": {
+      "minimatch@<3.1.4": "3.1.5"
+    }
   }
 }
