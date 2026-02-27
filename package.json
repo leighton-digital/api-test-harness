@@ -67,24 +67,24 @@
     "constructs": "^10.4.2"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.3.15",
-    "@commitlint/cli": "20.4.1",
-    "@commitlint/config-conventional": "20.3.1",
+    "@biomejs/biome": "2.4.4",
+    "@commitlint/cli": "20.4.2",
+    "@commitlint/config-conventional": "20.4.2",
     "@semantic-release/changelog": "6.0.3",
     "@semantic-release/git": "10.0.1",
-    "@swc/core": "1.15.11",
+    "@swc/core": "1.15.17",
     "@swc/jest": "0.2.39",
     "@types/jest": "30.0.0",
-    "@types/node": "25.2.3",
-    "aws-cdk-lib": "2.238.0",
+    "@types/node": "25.3.2",
+    "aws-cdk-lib": "2.240.0",
     "commit-and-tag-version": "12.6.1",
     "commitizen": "4.3.1",
-    "constructs": "10.5.0",
+    "constructs": "10.5.1",
     "conventional-changelog-conventionalcommits": "9.1.0",
     "cz-conventional-changelog": "3.3.0",
     "esbuild": "0.27.3",
     "jest": "30.2.0",
-    "lefthook": "2.0.16",
+    "lefthook": "2.1.1",
     "ts-jest": "29.4.6",
     "typedoc": "0.28.17",
     "typedoc-plugin-markdown": "4.10.0",
@@ -97,16 +97,11 @@
   },
   "dependencies": {
     "@aws-lambda-powertools/logger": "2.31.0",
-    "@aws-sdk/client-dynamodb": "3.992.0",
-    "@aws-sdk/util-dynamodb": "3.992.0",
+    "@aws-sdk/client-dynamodb": "3.999.0",
+    "@aws-sdk/util-dynamodb": "3.996.1",
     "@fastify/aws-lambda": "6.4.0",
     "convict": "6.2.4",
     "fastify": "5.7.4",
     "uuid": "13.0.0"
-  },
-  "pnpm": {
-    "overrides": {
-      "minimatch@<3.1.4": "3.1.5"
-    }
   }
 }
