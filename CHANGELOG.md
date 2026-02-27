@@ -1,3 +1,16 @@
+# [1.1.0](https://github.com/leighton-digital/api-test-harness/compare/v1.0.2...v1.1.0) (2026-02-27)
+
+
+### Bug Fixes
+
+* fix issues with jest and uuid ([275d164](https://github.com/leighton-digital/api-test-harness/commit/275d164274afad535f79151c154e4d790f61cae2))
+* remove unused dependency ([874bd47](https://github.com/leighton-digital/api-test-harness/commit/874bd47dde47b40d82518b82d1aef1fa53a3cd38))
+
+
+### Features
+
+* ensure that jest and uuid work well together ([6f9a30b](https://github.com/leighton-digital/api-test-harness/commit/6f9a30b843d4cca93f3617235e9e5cb26916c0e1))
+
 ## [1.0.2](https://github.com/leighton-digital/api-test-harness/compare/v1.0.1...v1.0.2) (2026-02-26)
 
 ## [1.0.1](https://github.com/leighton-digital/api-test-harness/compare/v1.0.0...v1.0.1) (2026-02-26)
