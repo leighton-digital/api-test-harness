@@ -1,3 +1,12 @@
+## [1.1.3](https://github.com/leighton-digital/api-test-harness/compare/v1.1.2...v1.1.3) (2026-02-27)
+
+
+### Bug Fixes
+
+* pin typedoc docusaurus plugin dependency version ([cab93de](https://github.com/leighton-digital/api-test-harness/commit/cab93deac185ede9f9331a9a8dc48f6073533706))
+* update pnpm lock ([de35e7f](https://github.com/leighton-digital/api-test-harness/commit/de35e7f3b9270c2a98b4d0d86f19d3b3454467e4))
+* upgrade docs-site dependencies ([930396a](https://github.com/leighton-digital/api-test-harness/commit/930396a33d3237b168dbe4e6db5d1c0ae1fbfb51))
+
 ## [1.1.2](https://github.com/leighton-digital/api-test-harness/compare/v1.1.1...v1.1.2) (2026-02-27)
 
 
