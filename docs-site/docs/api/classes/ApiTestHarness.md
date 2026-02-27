@@ -87,7 +87,7 @@ The function URL of the deployed Lambda function.
 
 > `readonly` **node**: `Node`
 
-Defined in: node\_modules/.pnpm/constructs@10.5.0/node\_modules/constructs/lib/construct.d.ts:277
+Defined in: node\_modules/.pnpm/constructs@10.5.1/node\_modules/constructs/lib/construct.d.ts:289
 
 The tree node.
 
@@ -101,7 +101,7 @@ The tree node.
 
 > **toString**(): `string`
 
-Defined in: node\_modules/.pnpm/constructs@10.5.0/node\_modules/constructs/lib/construct.d.ts:302
+Defined in: node\_modules/.pnpm/constructs@10.5.1/node\_modules/constructs/lib/construct.d.ts:314
 
 Returns a string representation of this construct.
 
@@ -119,7 +119,7 @@ Returns a string representation of this construct.
 
 > **with**(...`mixins`): `IConstruct`
 
-Defined in: node\_modules/.pnpm/constructs@10.5.0/node\_modules/constructs/lib/construct.d.ts:298
+Defined in: node\_modules/.pnpm/constructs@10.5.1/node\_modules/constructs/lib/construct.d.ts:310
 
 Applies one or more mixins to this construct.
 
@@ -152,7 +152,7 @@ This construct for chaining
 
 > `static` **isConstruct**(`x`): `x is Construct`
 
-Defined in: node\_modules/.pnpm/constructs@10.5.0/node\_modules/constructs/lib/construct.d.ts:273
+Defined in: node\_modules/.pnpm/constructs@10.5.1/node\_modules/constructs/lib/construct.d.ts:285
 
 Checks if `x` is a construct.
 
