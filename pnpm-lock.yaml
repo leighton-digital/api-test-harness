@@ -78,9 +78,6 @@ importers:
       esbuild:
         specifier: 0.27.3
         version: 0.27.3
-      fast-check:
-        specifier: 4.5.3
-        version: 4.5.3
       jest:
         specifier: 30.2.0
         version: 30.2.0(@types/node@25.0.10)(ts-node@10.9.2(@swc/core@1.15.11)(@types/node@25.0.10)(typescript@5.9.3))
@@ -4452,10 +4449,6 @@ packages:
   external-editor@3.1.0:
     resolution: {integrity: sha512-hMQ4CX1p1izmuLYyZqLMO/qGNw10wSv9QDCPfzXfyFrOaCSSoRfqE1Kf1s5an66J5JZC62NewG+mK49jOCtQew==}
     engines: {node: '>=4'}
-
-  fast-check@4.5.3:
-    resolution: {integrity: sha512-IE9csY7lnhxBnA8g/WI5eg/hygA6MGWJMSNfFRrBlXUciADEhS1EDB0SIsMSvzubzIlOBbVITSsypCsW717poA==}
-    engines: {node: '>=12.17.0'}
 
   fast-content-type-parse@3.0.0:
     resolution: {integrity: sha512-ZvLdcY8P+N8mGQJahJV5G4U88CSvT1rP8ApL6uETe88MBXrBHAkZlSEySdUlyztF7ccb+Znos3TFqaepHxdhBg==}
@@ -14262,10 +14255,6 @@ snapshots:
       chardet: 0.7.0
       iconv-lite: 0.4.24
       tmp: 0.0.33
-
-  fast-check@4.5.3:
-    dependencies:
-      pure-rand: 7.0.1
 
   fast-content-type-parse@3.0.0: {}
 
