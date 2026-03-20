@@ -67,7 +67,7 @@
     "constructs": "^10.4.2"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.4.5",
+    "@biomejs/biome": "2.4.6",
     "@commitlint/cli": "20.4.3",
     "@commitlint/config-conventional": "20.4.3",
     "@semantic-release/changelog": "6.0.3",
@@ -75,7 +75,7 @@
     "@swc/core": "1.15.18",
     "@swc/jest": "0.2.39",
     "@types/jest": "30.0.0",
-    "@types/node": "25.3.3",
+    "@types/node": "25.3.5",
     "aws-cdk-lib": "2.241.0",
     "commit-and-tag-version": "12.6.1",
     "commitizen": "4.3.1",
@@ -98,7 +98,7 @@
   "dependencies": {
     "@aws-lambda-powertools/logger": "2.31.0",
     "@aws-sdk/client-dynamodb": "3.1002.0",
-    "@aws-sdk/util-dynamodb": "3.996.1",
+    "@aws-sdk/util-dynamodb": "3.996.2",
     "@fastify/aws-lambda": "6.4.0",
     "convict": "6.2.4",
     "fastify": "5.8.1",
