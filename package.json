@@ -76,7 +76,7 @@
     "@swc/jest": "0.2.39",
     "@types/jest": "30.0.0",
     "@types/node": "25.4.0",
-    "aws-cdk-lib": "2.242.0",
+    "aws-cdk-lib": "2.243.0",
     "commit-and-tag-version": "12.6.1",
     "commitizen": "4.3.1",
     "constructs": "10.5.1",
