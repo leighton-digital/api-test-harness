@@ -100,7 +100,7 @@
     "@aws-sdk/client-dynamodb": "3.1007.0",
     "@aws-sdk/util-dynamodb": "3.996.2",
     "@fastify/aws-lambda": "6.4.0",
-    "convict": "6.2.4",
+    "convict": "6.2.5",
     "fastify": "5.8.3",
     "uuid": "13.0.0"
   }
