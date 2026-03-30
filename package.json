@@ -97,7 +97,7 @@
   },
   "dependencies": {
     "@aws-lambda-powertools/logger": "2.31.0",
-    "@aws-sdk/client-dynamodb": "3.1008.0",
+    "@aws-sdk/client-dynamodb": "3.1009.0",
     "@aws-sdk/util-dynamodb": "3.996.2",
     "@fastify/aws-lambda": "6.4.0",
     "convict": "6.2.5",
