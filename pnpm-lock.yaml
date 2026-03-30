@@ -12,11 +12,11 @@ importers:
         specifier: 2.31.0
         version: 2.31.0
       '@aws-sdk/client-dynamodb':
-        specifier: 3.1008.0
-        version: 3.1008.0
+        specifier: 3.1009.0
+        version: 3.1009.0
       '@aws-sdk/util-dynamodb':
         specifier: 3.996.2
-        version: 3.996.2(@aws-sdk/client-dynamodb@3.1008.0)
+        version: 3.996.2(@aws-sdk/client-dynamodb@3.1009.0)
       '@fastify/aws-lambda':
         specifier: 6.4.0
         version: 6.4.0
@@ -35,7 +35,7 @@ importers:
         version: 2.4.6
       '@commitlint/cli':
         specifier: 20.4.4
-        version: 20.4.4(@types/node@25.5.0)(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.3.0)(typescript@5.9.3)
+        version: 20.4.4(@types/node@25.5.0)(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.4.0)(typescript@5.9.3)
       '@commitlint/config-conventional':
         specifier: 20.4.4
         version: 20.4.4
@@ -261,8 +261,8 @@ packages:
       '@middy/core':
         optional: true
 
-  '@aws-sdk/client-dynamodb@3.1008.0':
-    resolution: {integrity: sha512-R3jj83tMilipIPKj+Qd0vKsYhcgrMqG8YoEhvW4RSLImIg0nrcZSO1ZO4xz3NT7SovSGloZiv1m15w4m7j7VvQ==}
+  '@aws-sdk/client-dynamodb@3.1009.0':
+    resolution: {integrity: sha512-2QYVDbPQpVWxXzeVo94NYwv12K5r1+7Bm4IgG/4TuU03nxgXqdlODWv7VPQeYE+a6cCMWxlEoeWAdX6SJ/lx6A==}
     engines: {node: '>=20.0.0'}
 
   '@aws-sdk/core@3.973.25':
@@ -277,28 +277,28 @@ packages:
     resolution: {integrity: sha512-qPymamdPcLp6ugoVocG1y5r69ScNiRzb0hogX25/ij+Wz7c7WnsgjLTaz7+eB5BfRxeyUwuw5hgULMuwOGOpcw==}
     engines: {node: '>=20.0.0'}
 
-  '@aws-sdk/credential-provider-ini@3.972.25':
-    resolution: {integrity: sha512-G/v/PicYn4qs7xCv4vT6I4QKdvMyRvsgIFNBkUueCGlbLo7/PuKcNKgUozmLSsaYnE7jIl6UrfkP07EUubr48w==}
+  '@aws-sdk/credential-provider-ini@3.972.26':
+    resolution: {integrity: sha512-xKxEAMuP6GYx2y5GET+d3aGEroax3AgGfwBE65EQAUe090lzyJ/RzxPX9s8v7Z6qAk0XwfQl+LrmH05X7YvTeg==}
     engines: {node: '>=20.0.0'}
 
-  '@aws-sdk/credential-provider-login@3.972.25':
-    resolution: {integrity: sha512-bUdmyJeVua7SmD+g2a65x2/0YqsGn4K2k4GawI43js0odaNaIzpIhLtHehUnPnfLuyhPWbJR1NyuIO4iMVfM0w==}
+  '@aws-sdk/credential-provider-login@3.972.26':
+    resolution: {integrity: sha512-EFcM8RM3TUxnZOfMJo++3PnyxFu1fL/huzmn3Vh+8IWRgqZawUD3cRwwOr+/4bE9DpyHaLOWFAjY0lfK5X9ZkQ==}
     engines: {node: '>=20.0.0'}
 
-  '@aws-sdk/credential-provider-node@3.972.26':
-    resolution: {integrity: sha512-5XSK74rCXxCNj+UWv5bjq1EccYkiyW4XOHFU9NXnsCcQF8dJuHdua1qFg0m/LIwVOWklbKsrcnMtfxIXwgvwzQ==}
+  '@aws-sdk/credential-provider-node@3.972.27':
+    resolution: {integrity: sha512-jXpxSolfFnPVj6GCTtx3xIdWNoDR7hYC/0SbetGZxOC9UnNmipHeX1k6spVstf7eWJrMhXNQEgXC0pD1r5tXIg==}
     engines: {node: '>=20.0.0'}
 
   '@aws-sdk/credential-provider-process@3.972.23':
     resolution: {integrity: sha512-IL/TFW59++b7MpHserjUblGrdP5UXy5Ekqqx1XQkERXBFJcZr74I7VaSrQT5dxdRMU16xGK4L0RQ5fQG1pMgnA==}
     engines: {node: '>=20.0.0'}
 
-  '@aws-sdk/credential-provider-sso@3.972.25':
-    resolution: {integrity: sha512-r4OGAfHmlEa1QBInHWz+/dOD4tRljcjVNQe9wJ/AJNXEj1d2WdsRLppvRFImRV6FIs+bTpjtL0a23V5ELQpRPw==}
+  '@aws-sdk/credential-provider-sso@3.972.26':
+    resolution: {integrity: sha512-c6ghvRb6gTlMznWhGxn/bpVCcp0HRaz4DobGVD9kI4vwHq186nU2xN/S7QGkm0lo0H2jQU8+dgpUFLxfTcwCOg==}
     engines: {node: '>=20.0.0'}
 
-  '@aws-sdk/credential-provider-web-identity@3.972.25':
-    resolution: {integrity: sha512-uM1OtoJgj+yK3MlAmda8uR9WJJCdm5HB25JyCeFL5a5q1Fbafalf4uKidFO3/L0Pgd+Fsflkb4cM6jHIswi3QQ==}
+  '@aws-sdk/credential-provider-web-identity@3.972.26':
+    resolution: {integrity: sha512-cXcS3+XD3iwhoXkM44AmxjmbcKueoLCINr1e+IceMmCySda5ysNIfiGBGe9qn5EMiQ9Jd7pP0AGFtcd6OV3Lvg==}
     engines: {node: '>=20.0.0'}
 
   '@aws-sdk/dynamodb-codec@3.972.26':
@@ -329,16 +329,16 @@ packages:
     resolution: {integrity: sha512-AilFIh4rI/2hKyyGN6XrB0yN96W2o7e7wyrPWCM6QjZM1mcC/pVkW3IWWRvuBWMpVP8Fg+rMpbzeLQ6dTM4gig==}
     engines: {node: '>=20.0.0'}
 
-  '@aws-sdk/nested-clients@3.996.15':
-    resolution: {integrity: sha512-k6WAVNkub5DrU46iPQvH1m0xc1n+0dX79+i287tYJzf5g1yU2rX3uf4xNeL5JvK1NtYgfwMnsxHqhOXFBn367A==}
+  '@aws-sdk/nested-clients@3.996.16':
+    resolution: {integrity: sha512-L7Qzoj/qQU1cL5GnYLQP5LbI+wlLCLoINvcykR3htKcQ4tzrPf2DOs72x933BM7oArYj1SKrkb2lGlsJHIic3g==}
     engines: {node: '>=20.0.0'}
 
   '@aws-sdk/region-config-resolver@3.972.10':
     resolution: {integrity: sha512-1dq9ToC6e070QvnVhhbAs3bb5r6cQ10gTVc6cyRV5uvQe7P138TV2uG2i6+Yok4bAkVAcx5AqkTEBUvWEtBlsQ==}
     engines: {node: '>=20.0.0'}
 
-  '@aws-sdk/token-providers@3.1018.0':
-    resolution: {integrity: sha512-97OPNJHy37wmGOX44xAcu6E9oSTiqK9uPcy/fWpmN5uB3JuEp1f6x60Xot/jp+FxwhQWIFUsVJFnm3QKqt7T6Q==}
+  '@aws-sdk/token-providers@3.1019.0':
+    resolution: {integrity: sha512-OF+2RfRmUKyjzrRWlDcyju3RBsuqcrYDQ8TwrJg8efcOotMzuZN4U9mpVTIdATpmEc4lWNZBMSjPzrGm6JPnAQ==}
     engines: {node: '>=20.0.0'}
 
   '@aws-sdk/types@3.973.6':
@@ -3762,6 +3762,10 @@ packages:
     resolution: {integrity: sha512-DOuBwYSqWzfwuRByY9O4oOIvDlkUCTDzfbOgcSbkY+imXXj+4tmrEFao3K+FxemClYfYnZzsvudbwrhje9VHDA==}
     engines: {node: '>=18'}
 
+  conventional-changelog-angular@8.3.1:
+    resolution: {integrity: sha512-6gfI3otXK5Ph5DfCOI1dblr+kN3FAm5a97hYoQkqNZxOaYa5WKfXH+AnpsmS+iUH2mgVC2Cg2Qw9m5OKcmNrIg==}
+    engines: {node: '>=18'}
+
   conventional-changelog-atom@3.0.0:
     resolution: {integrity: sha512-pnN5bWpH+iTUWU3FaYdw5lJmfWeqSyrUkG+wyHBI9tC1dLNnHkbAOg1SzTQ7zBqiFrfo55h40VsGXWMdopwc5g==}
     engines: {node: '>=14'}
@@ -3841,6 +3845,11 @@ packages:
 
   conventional-commits-parser@6.3.0:
     resolution: {integrity: sha512-RfOq/Cqy9xV9bOA8N+ZH6DlrDR+5S3Mi0B5kACEjESpE+AviIpAptx9a9cFpWCCvgRtWT+0BbUw+e1BZfts9jg==}
+    engines: {node: '>=18'}
+    hasBin: true
+
+  conventional-commits-parser@6.4.0:
+    resolution: {integrity: sha512-tvRg7FIBNlyPzjdG8wWRlPHQJJHI7DylhtRGeU9Lq+JuoPh5BKpPRX83ZdLrvXuOSu5Eo/e7SzOQhU4Hd2Miuw==}
     engines: {node: '>=18'}
     hasBin: true
 
@@ -8667,12 +8676,12 @@ snapshots:
       '@aws-lambda-powertools/commons': 2.31.0
       '@aws/lambda-invoke-store': 0.2.3
 
-  '@aws-sdk/client-dynamodb@3.1008.0':
+  '@aws-sdk/client-dynamodb@3.1009.0':
     dependencies:
       '@aws-crypto/sha256-browser': 5.2.0
       '@aws-crypto/sha256-js': 5.2.0
       '@aws-sdk/core': 3.973.25
-      '@aws-sdk/credential-provider-node': 3.972.26
+      '@aws-sdk/credential-provider-node': 3.972.27
       '@aws-sdk/dynamodb-codec': 3.972.26
       '@aws-sdk/middleware-endpoint-discovery': 3.972.9
       '@aws-sdk/middleware-host-header': 3.972.8
@@ -8751,16 +8760,16 @@ snapshots:
       '@smithy/util-stream': 4.5.20
       tslib: 2.8.1
 
-  '@aws-sdk/credential-provider-ini@3.972.25':
+  '@aws-sdk/credential-provider-ini@3.972.26':
     dependencies:
       '@aws-sdk/core': 3.973.25
       '@aws-sdk/credential-provider-env': 3.972.23
       '@aws-sdk/credential-provider-http': 3.972.25
-      '@aws-sdk/credential-provider-login': 3.972.25
+      '@aws-sdk/credential-provider-login': 3.972.26
       '@aws-sdk/credential-provider-process': 3.972.23
-      '@aws-sdk/credential-provider-sso': 3.972.25
-      '@aws-sdk/credential-provider-web-identity': 3.972.25
-      '@aws-sdk/nested-clients': 3.996.15
+      '@aws-sdk/credential-provider-sso': 3.972.26
+      '@aws-sdk/credential-provider-web-identity': 3.972.26
+      '@aws-sdk/nested-clients': 3.996.16
       '@aws-sdk/types': 3.973.6
       '@smithy/credential-provider-imds': 4.2.12
       '@smithy/property-provider': 4.2.12
@@ -8770,10 +8779,10 @@ snapshots:
     transitivePeerDependencies:
       - aws-crt
 
-  '@aws-sdk/credential-provider-login@3.972.25':
+  '@aws-sdk/credential-provider-login@3.972.26':
     dependencies:
       '@aws-sdk/core': 3.973.25
-      '@aws-sdk/nested-clients': 3.996.15
+      '@aws-sdk/nested-clients': 3.996.16
       '@aws-sdk/types': 3.973.6
       '@smithy/property-provider': 4.2.12
       '@smithy/protocol-http': 5.3.12
@@ -8783,14 +8792,14 @@ snapshots:
     transitivePeerDependencies:
       - aws-crt
 
-  '@aws-sdk/credential-provider-node@3.972.26':
+  '@aws-sdk/credential-provider-node@3.972.27':
     dependencies:
       '@aws-sdk/credential-provider-env': 3.972.23
       '@aws-sdk/credential-provider-http': 3.972.25
-      '@aws-sdk/credential-provider-ini': 3.972.25
+      '@aws-sdk/credential-provider-ini': 3.972.26
       '@aws-sdk/credential-provider-process': 3.972.23
-      '@aws-sdk/credential-provider-sso': 3.972.25
-      '@aws-sdk/credential-provider-web-identity': 3.972.25
+      '@aws-sdk/credential-provider-sso': 3.972.26
+      '@aws-sdk/credential-provider-web-identity': 3.972.26
       '@aws-sdk/types': 3.973.6
       '@smithy/credential-provider-imds': 4.2.12
       '@smithy/property-provider': 4.2.12
@@ -8809,11 +8818,11 @@ snapshots:
       '@smithy/types': 4.13.1
       tslib: 2.8.1
 
-  '@aws-sdk/credential-provider-sso@3.972.25':
+  '@aws-sdk/credential-provider-sso@3.972.26':
     dependencies:
       '@aws-sdk/core': 3.973.25
-      '@aws-sdk/nested-clients': 3.996.15
-      '@aws-sdk/token-providers': 3.1018.0
+      '@aws-sdk/nested-clients': 3.996.16
+      '@aws-sdk/token-providers': 3.1019.0
       '@aws-sdk/types': 3.973.6
       '@smithy/property-provider': 4.2.12
       '@smithy/shared-ini-file-loader': 4.4.7
@@ -8822,10 +8831,10 @@ snapshots:
     transitivePeerDependencies:
       - aws-crt
 
-  '@aws-sdk/credential-provider-web-identity@3.972.25':
+  '@aws-sdk/credential-provider-web-identity@3.972.26':
     dependencies:
       '@aws-sdk/core': 3.973.25
-      '@aws-sdk/nested-clients': 3.996.15
+      '@aws-sdk/nested-clients': 3.996.16
       '@aws-sdk/types': 3.973.6
       '@smithy/property-provider': 4.2.12
       '@smithy/shared-ini-file-loader': 4.4.7
@@ -8889,7 +8898,7 @@ snapshots:
       '@smithy/util-retry': 4.2.12
       tslib: 2.8.1
 
-  '@aws-sdk/nested-clients@3.996.15':
+  '@aws-sdk/nested-clients@3.996.16':
     dependencies:
       '@aws-crypto/sha256-browser': 5.2.0
       '@aws-crypto/sha256-js': 5.2.0
@@ -8940,10 +8949,10 @@ snapshots:
       '@smithy/types': 4.13.1
       tslib: 2.8.1
 
-  '@aws-sdk/token-providers@3.1018.0':
+  '@aws-sdk/token-providers@3.1019.0':
     dependencies:
       '@aws-sdk/core': 3.973.25
-      '@aws-sdk/nested-clients': 3.996.15
+      '@aws-sdk/nested-clients': 3.996.16
       '@aws-sdk/types': 3.973.6
       '@smithy/property-provider': 4.2.12
       '@smithy/shared-ini-file-loader': 4.4.7
@@ -8957,9 +8966,9 @@ snapshots:
       '@smithy/types': 4.13.1
       tslib: 2.8.1
 
-  '@aws-sdk/util-dynamodb@3.996.2(@aws-sdk/client-dynamodb@3.1008.0)':
+  '@aws-sdk/util-dynamodb@3.996.2(@aws-sdk/client-dynamodb@3.1009.0)':
     dependencies:
-      '@aws-sdk/client-dynamodb': 3.1008.0
+      '@aws-sdk/client-dynamodb': 3.1009.0
       tslib: 2.8.1
 
   '@aws-sdk/util-endpoints@3.996.5':
@@ -9869,12 +9878,12 @@ snapshots:
   '@colors/colors@1.5.0':
     optional: true
 
-  '@commitlint/cli@20.4.4(@types/node@25.5.0)(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.3.0)(typescript@5.9.3)':
+  '@commitlint/cli@20.4.4(@types/node@25.5.0)(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.4.0)(typescript@5.9.3)':
     dependencies:
       '@commitlint/format': 20.5.0
       '@commitlint/lint': 20.5.0
       '@commitlint/load': 20.5.0(@types/node@25.5.0)(typescript@5.9.3)
-      '@commitlint/read': 20.5.0(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.3.0)
+      '@commitlint/read': 20.5.0(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.4.0)
       '@commitlint/types': 20.5.0
       tinyexec: 1.0.4
       yargs: 17.7.2
@@ -9967,11 +9976,11 @@ snapshots:
       conventional-changelog-angular: 8.3.0
       conventional-commits-parser: 6.3.0
 
-  '@commitlint/read@20.5.0(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.3.0)':
+  '@commitlint/read@20.5.0(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.4.0)':
     dependencies:
       '@commitlint/top-level': 20.4.3
       '@commitlint/types': 20.5.0
-      git-raw-commits: 5.0.1(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.3.0)
+      git-raw-commits: 5.0.1(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.4.0)
       minimist: 1.2.8
       tinyexec: 1.0.4
     transitivePeerDependencies:
@@ -10015,14 +10024,14 @@ snapshots:
       conventional-commits-parser: 6.3.0
       picocolors: 1.1.1
 
-  '@conventional-changelog/git-client@2.6.0(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.3.0)':
+  '@conventional-changelog/git-client@2.6.0(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.4.0)':
     dependencies:
       '@simple-libs/child-process-utils': 1.0.2
       '@simple-libs/stream-utils': 1.2.0
       semver: 7.7.4
     optionalDependencies:
       conventional-commits-filter: 5.0.0
-      conventional-commits-parser: 6.3.0
+      conventional-commits-parser: 6.4.0
 
   '@cspotcode/source-map-support@0.8.1':
     dependencies:
@@ -11876,10 +11885,10 @@ snapshots:
 
   '@semantic-release/commit-analyzer@13.0.1(semantic-release@25.0.3(typescript@5.9.3))':
     dependencies:
-      conventional-changelog-angular: 8.3.0
+      conventional-changelog-angular: 8.3.1
       conventional-changelog-writer: 8.4.0
       conventional-commits-filter: 5.0.0
-      conventional-commits-parser: 6.3.0
+      conventional-commits-parser: 6.4.0
       debug: 4.4.3
       import-from-esm: 2.0.0
       lodash-es: 4.17.23
@@ -11950,10 +11959,10 @@ snapshots:
 
   '@semantic-release/release-notes-generator@14.1.0(semantic-release@25.0.3(typescript@5.9.3))':
     dependencies:
-      conventional-changelog-angular: 8.3.0
+      conventional-changelog-angular: 8.3.1
       conventional-changelog-writer: 8.4.0
       conventional-commits-filter: 5.0.0
-      conventional-commits-parser: 6.3.0
+      conventional-commits-parser: 6.4.0
       debug: 4.4.3
       get-stream: 7.0.1
       import-from-esm: 2.0.0
@@ -13559,6 +13568,10 @@ snapshots:
     dependencies:
       compare-func: 2.0.0
 
+  conventional-changelog-angular@8.3.1:
+    dependencies:
+      compare-func: 2.0.0
+
   conventional-changelog-atom@3.0.0: {}
 
   conventional-changelog-codemirror@3.0.0: {}
@@ -13650,6 +13663,11 @@ snapshots:
       split2: 3.2.2
 
   conventional-commits-parser@6.3.0:
+    dependencies:
+      '@simple-libs/stream-utils': 1.2.0
+      meow: 13.2.0
+
+  conventional-commits-parser@6.4.0:
     dependencies:
       '@simple-libs/stream-utils': 1.2.0
       meow: 13.2.0
@@ -14668,9 +14686,9 @@ snapshots:
       meow: 8.1.2
       split2: 3.2.2
 
-  git-raw-commits@5.0.1(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.3.0):
+  git-raw-commits@5.0.1(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.4.0):
     dependencies:
-      '@conventional-changelog/git-client': 2.6.0(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.3.0)
+      '@conventional-changelog/git-client': 2.6.0(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.4.0)
       meow: 13.2.0
     transitivePeerDependencies:
       - conventional-commits-filter
