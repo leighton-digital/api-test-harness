@@ -67,7 +67,7 @@
     "constructs": "^10.4.2"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.4.6",
+    "@biomejs/biome": "2.4.7",
     "@commitlint/cli": "20.4.4",
     "@commitlint/config-conventional": "20.4.4",
     "@semantic-release/changelog": "6.0.3",
